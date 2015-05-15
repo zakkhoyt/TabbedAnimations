@@ -7,8 +7,11 @@
 //
 
 #import "FirstViewController.h"
+#import "ButtonTabAnimator.h"
 
-@interface FirstViewController ()
+@interface FirstViewController () <UITabBarControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *button;
+
 
 @end
 
@@ -19,9 +22,27 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.tabBarController.delegate = self;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
 }
+
+- (IBAction)buttonTouchUpInside:(id)sender {
+    [self.tabBarController setSelectedIndex:1];
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController
+            animationControllerForTransitionFromViewController:(UIViewController *)fromVC
+                                              toViewController:(UIViewController *)toVC{
+    return [ButtonTabAnimator animatorStartingAtFrame:self.button.frame];
+}
+
 
 @end

@@ -15,6 +15,7 @@
 		CF455FDA1B05AC8C00754989 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF455FD91B05AC8C00754989 /* Images.xcassets */; };
 		CF455FDD1B05AC8C00754989 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF455FDB1B05AC8C00754989 /* LaunchScreen.xib */; };
 		CF455FE91B05AC8C00754989 /* TabbedAnimationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF455FE81B05AC8C00754989 /* TabbedAnimationsTests.m */; };
+		CF455FF41B05AD2A00754989 /* ButtonTabAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF455FF31B05AD2A00754989 /* ButtonTabAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		CF455FE21B05AC8C00754989 /* TabbedAnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabbedAnimationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF455FE71B05AC8C00754989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF455FE81B05AC8C00754989 /* TabbedAnimationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbedAnimationsTests.m; sourceTree = "<group>"; };
+		CF455FF21B05AD2A00754989 /* ButtonTabAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonTabAnimator.h; sourceTree = "<group>"; };
+		CF455FF31B05AD2A00754989 /* ButtonTabAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonTabAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				CF455FD91B05AC8C00754989 /* Images.xcassets */,
 				CF455FDB1B05AC8C00754989 /* LaunchScreen.xib */,
 				CF455FC91B05AC8C00754989 /* Supporting Files */,
+				CF455FF21B05AD2A00754989 /* ButtonTabAnimator.h */,
+				CF455FF31B05AD2A00754989 /* ButtonTabAnimator.m */,
 			);
 			path = TabbedAnimations;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				CF455FCF1B05AC8C00754989 /* AppDelegate.m in Sources */,
 				CF455FD21B05AC8C00754989 /* FirstViewController.m in Sources */,
 				CF455FCC1B05AC8C00754989 /* main.m in Sources */,
+				CF455FF41B05AD2A00754989 /* ButtonTabAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

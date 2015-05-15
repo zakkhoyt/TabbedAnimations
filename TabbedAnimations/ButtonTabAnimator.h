@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Zakk Hoyt. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ButtonTabAnimator : NSObject
-
+@interface ButtonTabAnimator : NSObject <UIViewControllerAnimatedTransitioning>
++(ButtonTabAnimator*)animatorStartingAtFrame:(CGRect)frame;
 @end
